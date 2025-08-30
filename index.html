@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USxBR Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>USxBR Investments</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="calculator">
+            <form>
+                <!-- BR Investment Calculator -->
+                <h3>Brasil</h3>
+                <label for="principal">Principal Investment</label>
+                <div class="input-container">
+                    <span class="input-label">R$</span>
+                    <input type="number" id="principal" name="principal" placeholder="0" required>
+                </div>
+
+                <label for="monthly-value">Monthly Investment</label>
+                <div class="input-container">
+                    <span class="input-label">R$</span>
+                    <input type="number" id="monthly-value" name="monthly-value" placeholder="0" required>
+                </div>
+
+                <label for="rate">Interest Rate</label>
+                <div class="input-container">
+                    <span class="input-label">%</span>
+                    <input type="number" id="rate" name="rate" placeholder="0">
+                    <select id="rate-type" name="rate-type">
+                        <option value="annual">Annual</option>
+                        <option value="monthly">Monthly</option>
+                    </select>
+                </div>
+
+                <label for="years">Investment Duration (Years):</label>
+                <div class="input-container">
+                    <input type="number" id="years" name="years" placeholder="0" required>
+                    <span class="input-label">Years</span>
+                </div>
+
+                <!-- US Investment Calculator -->
+                <h3>US</h3>
+
+                <label for="principal-us">Principal Investment</label>
+                <div class="input-container">
+                    <span class="input-label">$</span>
+                    <input type="number" id="principal-us" name="principal-us" placeholder="0" required>
+                </div>
+
+                <label for="monthly-value-us">Monthly Investment</label>
+                <div class="input-container">
+                    <span class="input-label">$</span>
+                    <input type="number" id="monthly-value-us" name="monthly-value-us" placeholder="0" required>
+                </div>
+
+                <label for="rate-us">Interest Rate</label>
+                <div class="input-container">
+                    <span class="input-label">%</span>
+                    <input type="number" id="rate-us" name="rate-us" step="0.1" placeholder="0">
+                    <select id="rate-type-us" name="rate-type-us">
+                        <option value="annual">Annual</option>
+                        <option value="monthly">Monthly</option>
+                    </select>
+                </div>
+
+                <label for="years-us">Investment Duration (Years):</label>
+                <div class="input-container">
+                    <input type="number" id="years-us" name="years-us" placeholder="0" required>
+                </div>
+
+                <button type="submit">Calculate</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 USxBR Project. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
